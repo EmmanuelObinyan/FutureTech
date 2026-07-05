@@ -140,21 +140,27 @@ Spotted something unclear in the README or code? Fix it. Good documentation make
 
 ## Contribution Steps
 
-1. Fork the repo and clone it locally (see [Getting Started](#getting-started) above)
-2. Create a new branch for your work:
-   ```bash
-   git checkout -b fix/component-name
-   ```
-3. Make your changes
-4. Commit with a clear message:
-   ```bash
-   git commit -m "fix: improve navbar component structure"
-   ```
-5. Push your branch:
-   ```bash
-   git push origin fix/component-name
-   ```
-6. Open a pull request on GitHub and describe what you changed
+1. Clone the repo (only once):
+   git clone https://github.com/EmmanuelObinyan/FUTURETECH.git
+   cd FUTURETECH
+
+2. Always pull latest before starting:
+   git checkout main
+   git pull
+
+3. Create a new branch for YOUR issue:
+   git checkout -b fix/protected-routes
+   (name it after the issue, e.g. fix/sanitize-content, refactor/button-component)
+
+4. Make your changes, then:
+   git add .
+   git commit -m "Add ProtectedRoute wrapper (closes #4)"
+   git push origin fix/protected-routes
+
+5. Open a Pull Request on GitHub:
+   - Base: main ← Compare: your branch
+   - In the PR description, write "Closes #4" so the issue auto-closes on merge
+   - Tag Emmanuel for review
 
 > Before starting work on an issue, leave a comment on it so others know it's being worked on.
 
